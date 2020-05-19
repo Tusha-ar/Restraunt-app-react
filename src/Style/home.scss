@@ -1,0 +1,48 @@
+.home{
+    height: 89vh;
+    margin-top: 3px;
+    background-color: #1b262c;
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: 'Indie Flower', cursive;
+        word-spacing: 5px;
+        font-size: 3.5em;
+        letter-spacing: 1.5px;
+        color: wheat;
+        &::before{
+            content: '';
+            height: 0%;
+            width: 20%;
+            top: -4em;
+            left: -2em;
+            position: absolute;
+            background-image: url('../assets/knife.jpg');
+            background-size: cover;
+            transition: 0.5s;
+        }
+        &:hover::before{
+            height: 200%;
+            width: 20%;
+            transform: translateY(3em);
+        }
+        &::after{
+            content: '';
+            height: 0%;
+            width: 20%;
+            top: 4em;
+            right: -1em;
+            position: absolute;
+            background-image: url('../assets/knife_r.jpg');
+            background-size: cover;
+            transition: 0.5s;
+        }
+        &:hover::after{
+            height: 200%;
+            width: 20%;
+            transform: translateY(-5em);
+        }
+    }
+}

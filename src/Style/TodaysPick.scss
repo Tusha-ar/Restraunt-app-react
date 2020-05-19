@@ -1,0 +1,56 @@
+.todayspick{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    height: 75vh;
+    background-color: #1B262C;
+    align-items: center;
+    h1{
+        padding: 3px 50px;
+        text-align: center;
+        border: 2px solid black;
+    }
+    .special{
+        width: 50%;
+        height: 50vh;
+        display: grid;
+        padding: 2em 5em 0 5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        grid-template-areas: 
+        "img img"
+        "nm pr"
+        "bt bt";
+        img{
+            height: 15em;
+            width: 20em;
+            grid-area: img;
+            justify-self: center;
+        }
+        h3{
+            grid-area: nm;
+            justify-self: center;
+            font-weight: 450;
+        }
+        h4{
+            font-weight: 450;
+            grid-area: pr;
+            justify-self: center;
+        }
+        button{
+            width: 25em;
+            padding: 10px 0;
+            color: wheat;
+            outline: none;
+            background: transparent;
+            justify-self: center;
+            grid-area: bt;
+        }
+    }
+    .special_na{
+        background-color: #e1f4f3;
+        padding: 5em 10em;
+        font-size: 2em;
+    }
+}
